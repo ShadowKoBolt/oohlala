@@ -1,0 +1,22 @@
+//
+// Scaffold
+// --------------------------------------------------
+
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: $body-copy;
+}
+.main {
+  position: relative;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+  z-index: 10;
+}

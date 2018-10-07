@@ -1,0 +1,28 @@
+//
+// Media Queries
+// --------------------------------------------------
+
+// Variables
+
+$sm:          576px   !default;
+$md:          768px   !default;
+$lg:          992px   !default;
+$xl:          1200px   !default;
+
+
+// Mixins
+
+@mixin media-query($media-query) {
+  @if $media-query == sm {
+      @media only screen and (min-width:$sm) { @content; }
+  }
+  @if $media-query == md {
+      @media only screen and (min-width:$md) { @content; }
+  }
+  @if $media-query == lg {
+      @media only screen and (min-width:$lg) { @content; }
+  }
+  @if $media-query == xl {
+      @media only screen and (min-width:$xl) { @content; }
+  }
+}

@@ -1,0 +1,14 @@
+//
+// Angles
+// --------------------------------------------------
+
+.bg-angle__top-left {
+  position: absolute;
+  width: 1375px;
+  height: 1375px;
+  top: -688px;
+  left: -688px;
+  transform: rotate(45deg);
+  background-image: linear-gradient(-92deg, #FDF4F0 41%, #FBE5DD 100%);
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.10);
+}
