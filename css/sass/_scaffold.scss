@@ -17,6 +17,8 @@ body {
 .main {
   position: relative;
   background-color: #FFFFFF;
-  overflow-x: hidden;
+  overflow: hidden;
   z-index: 10;
+  max-width: 2240px;
+  margin: 0 auto;
 }

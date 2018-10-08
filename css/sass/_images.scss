@@ -1,0 +1,10 @@
+.img-frame__diamond--large {
+  transform: rotate(45deg);
+  background: red;
+  overflow: hidden;
+  width: 480px;
+  height: 480px;
+  img {
+    transform: rotate(-45deg) scale(1.5);
+  }
+}

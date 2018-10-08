@@ -1740,8 +1740,10 @@ body {
 .main {
   position: relative;
   background-color: #FFFFFF;
-  overflow-x: hidden;
-  z-index: 10; }
+  overflow: hidden;
+  z-index: 10;
+  max-width: 2240px;
+  margin: 0 auto; }
 
 .align__text--left {
   text-align: left; }
@@ -1765,6 +1767,9 @@ body {
 .relative {
   position: relative; }
 
+.section-margin {
+  margin-bottom: 300px; }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Libre Baskerville", serif;
   font-weight: normal;
@@ -1777,7 +1782,8 @@ p {
 
 .title--xl {
   font-size: 3.5rem;
-  line-height: 4rem; }
+  line-height: 4rem;
+  margin-bottom: 2rem; }
 
 .title--l {
   font-size: 2rem; }
@@ -1811,6 +1817,15 @@ p {
   .button--primary:hover, .button--primary:focus {
     text-decoration: none; }
 
+.img-frame__diamond--large {
+  transform: rotate(45deg);
+  background: red;
+  overflow: hidden;
+  width: 480px;
+  height: 480px; }
+  .img-frame__diamond--large img {
+    transform: rotate(-45deg) scale(1.5); }
+
 .section__nav {
   min-height: 160px; }
 
@@ -1833,15 +1848,33 @@ p {
     opacity: 0.8;
     background-image: linear-gradient(-135deg, #FAE7E8 0%, #F3CACC 100%); }
 
-.bg-angle__top-left {
+.bg-angle {
   position: absolute;
-  width: 1375px;
-  height: 1375px;
-  top: -688px;
-  left: -688px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
   transform: rotate(45deg);
-  background-image: linear-gradient(-92deg, #FDF4F0 41%, #FBE5DD 100%);
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1); }
+  z-index: -1; }
+
+.bg-angle__top-left {
+  width: 1440px;
+  height: 1440px;
+  top: -720px;
+  left: -720px;
+  background-image: linear-gradient(-92deg, #FDF4F0 41%, #FBE5DD 100%); }
+
+.bg-angle__bottom-right {
+  width: 1440px;
+  height: 1440px;
+  bottom: -720px;
+  right: -720px;
+  background-image: linear-gradient(-92deg, #FDF4F0 41%, #FBE5DD 100%); }
+
+.bg-angle__bottom-left--home {
+  z-index: -2;
+  width: 2000px;
+  height: 2000px;
+  bottom: -1000px;
+  left: -1000px;
+  background-image: linear-gradient(-180deg, #FDF6F7 0%, #FAEAEB 100%); }
 
 .section__cta {
   padding: 150px 0; }
