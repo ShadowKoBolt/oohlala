@@ -1,0 +1,30 @@
+//
+// Tables
+// --------------------------------------------------
+
+%table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 0.875rem;
+  tr {
+    min-height: 60px;
+  }
+}
+.table--striped {
+  @extend %table;
+  margin-bottom: 50px;
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.05);
+  tr {
+    background-color: #FFFFFF;
+    &:nth-child(even) {
+      background-color: #FDF7F7;
+    }
+    td {
+      padding: 20px;
+      + td {
+        text-align: right;
+      }
+    }
+  }
+}

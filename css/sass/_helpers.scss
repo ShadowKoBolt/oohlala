@@ -13,6 +13,12 @@
 .align__text--right {
   text-align: right;
 }
+.float-right {
+  float: right;
+}
+.float-left {
+  float: left;
+}
 
 // Only visible by screen readers
 
@@ -36,5 +42,5 @@
 // Pad sections
 
 .section-margin {
-  margin-bottom: 300px;
+  margin-bottom: 400px;
 }

@@ -5,8 +5,12 @@ h1, h2, h3, h4, h5, h6 {
   color: $heading-colour;
 }
 
+strong, .strong {
+  font-weight: 600;
+}
+
 p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 1.5rem;
 }
 
@@ -20,4 +24,9 @@ p {
 }
 .text--s {
   font-size: 0.875rem;
+}
+.title--offset {
+  position: relative;
+  left: -30px;
+  margin-bottom: 20px;
 }

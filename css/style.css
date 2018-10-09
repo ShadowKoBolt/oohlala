@@ -1754,6 +1754,12 @@ body {
 .align__text--right {
   text-align: right; }
 
+.float-right {
+  float: right; }
+
+.float-left {
+  float: left; }
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1768,7 +1774,7 @@ body {
   position: relative; }
 
 .section-margin {
-  margin-bottom: 300px; }
+  margin-bottom: 400px; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Libre Baskerville", serif;
@@ -1776,8 +1782,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
   color: #222222; }
 
+strong, .strong {
+  font-weight: 600; }
+
 p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 1.5rem; }
 
 .title--xl {
@@ -1790,6 +1799,31 @@ p {
 
 .text--s {
   font-size: 0.875rem; }
+
+.title--offset {
+  position: relative;
+  left: -30px;
+  margin-bottom: 20px; }
+
+.table--striped {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 0.875rem; }
+  .table--striped tr {
+    min-height: 60px; }
+
+.table--striped {
+  margin-bottom: 50px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05); }
+  .table--striped tr {
+    background-color: #FFFFFF; }
+    .table--striped tr:nth-child(even) {
+      background-color: #FDF7F7; }
+    .table--striped tr td {
+      padding: 20px; }
+      .table--striped tr td + td {
+        text-align: right; }
 
 .button {
   display: inline-block;
@@ -1817,20 +1851,70 @@ p {
   .button--primary:hover, .button--primary:focus {
     text-decoration: none; }
 
-.img-frame__diamond--large {
+.img-frame__diamond--large, .img-frame__diamond--small {
   transform: rotate(45deg);
   background: red;
   overflow: hidden;
   width: 480px;
-  height: 480px; }
-  .img-frame__diamond--large img {
+  height: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .img-frame__diamond--large img, .img-frame__diamond--small img {
     transform: rotate(-45deg) scale(1.5); }
 
+.img-frame__diamond--large {
+  width: 480px;
+  height: 480px; }
+
+.img-frame__diamond--small {
+  width: 240px;
+  height: 240px;
+  position: absolute;
+  right: -55px; }
+
+.diamond--top {
+  bottom: 100%; }
+  .diamond--top::before {
+    content: " ";
+    background: red;
+    width: 240px;
+    height: 240px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0; }
+
+.diamond--bottom {
+  top: 100%; }
+
 .section__nav {
-  min-height: 160px; }
+  padding: 10px 0;
+  background-color: rgba(255, 255, 255, 0.5); }
+
+.nav__brand {
+  display: inline-block;
+  width: 200px; }
+  .nav__brand svg {
+    width: 100%; }
+
+.nav {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0; }
+
+.nav__item {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-left: 50px; }
+  .nav__item a {
+    color: #222222; }
 
 .section__hero {
-  margin-bottom: 150px; }
+  margin: 100px 0; }
 
 .title--square {
   position: relative;
@@ -1848,11 +1932,36 @@ p {
     opacity: 0.8;
     background-image: linear-gradient(-135deg, #FAE7E8 0%, #F3CACC 100%); }
 
-.bg-angle {
+.hero-block {
+  margin: 100px 0; }
+
+.hero-paragraph {
+  margin-bottom: 40px;
+  position: relative; }
+  .hero-paragraph::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    background-color: #222;
+    width: 1px;
+    height: 120px;
+    margin-top: 40px; }
+
+.bg-angle__center, .bg-angle__top-left, .bg-angle__bottom-right, .bg-angle__bottom-left, .bg-angle__bottom-left--home {
   position: absolute;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
   transform: rotate(45deg);
   z-index: -1; }
+
+.bg-angle__center {
+  box-shadow: none;
+  width: 1440px;
+  height: 1440px;
+  top: -720px;
+  left: 50%;
+  margin-left: -720px;
+  background-image: linear-gradient(-92deg, #FDF4F0 41%, #FBE5DD 100%); }
 
 .bg-angle__top-left {
   width: 1440px;
@@ -1868,6 +1977,14 @@ p {
   right: -720px;
   background-image: linear-gradient(-92deg, #FDF4F0 41%, #FBE5DD 100%); }
 
+.bg-angle__bottom-left {
+  box-shadow: none;
+  width: 1440px;
+  height: 1440px;
+  bottom: -720px;
+  left: -720px;
+  background-image: linear-gradient(-180deg, #FDF6F7 0%, #FAEAEB 100%); }
+
 .bg-angle__bottom-left--home {
   z-index: -2;
   width: 2000px;
@@ -1877,7 +1994,7 @@ p {
   background-image: linear-gradient(-180deg, #FDF6F7 0%, #FAEAEB 100%); }
 
 .section__cta {
-  padding: 150px 0; }
+  padding: 200px 0; }
 
 .section__footer {
   background-color: #FFFFFF;

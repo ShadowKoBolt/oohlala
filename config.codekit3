@@ -9,6 +9,18 @@
 	],
 "creatorBuild": "28901",
 "files": {
+	"/_brand.slim": {
+		"cB": 0,
+		"cmO": 0,
+		"ft": 1024,
+		"llg": 0,
+		"oA": 1,
+		"oAP": "/_brand.html",
+		"oF": 1,
+		"oFM": 0,
+		"oS": 1,
+		"rAC": 0
+		},
 	"/_footer.slim": {
 		"cB": 0,
 		"cmO": 0,
@@ -21,6 +33,18 @@
 		"oS": 1,
 		"rAC": 0
 		},
+	"/_head.slim": {
+		"cB": 0,
+		"cmO": 0,
+		"ft": 1024,
+		"llg": 0,
+		"oA": 1,
+		"oAP": "/_head.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 1,
+		"rAC": 0
+		},
 	"/_header.slim": {
 		"cB": 0,
 		"cmO": 0,
@@ -28,6 +52,44 @@
 		"llg": 0,
 		"oA": 1,
 		"oAP": "/_header.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 1,
+		"rAC": 0
+		},
+	"/blog.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/blog.html",
+		"oF": 0
+		},
+	"/blog.slim": {
+		"cB": 0,
+		"cmO": 0,
+		"ft": 1024,
+		"llg": 0,
+		"oA": 0,
+		"oAP": "/blog.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 1,
+		"rAC": 0
+		},
+	"/contact.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/contact.html",
+		"oF": 0
+		},
+	"/contact.slim": {
+		"cB": 0,
+		"cmO": 0,
+		"ft": 1024,
+		"llg": 0,
+		"oA": 0,
+		"oAP": "/contact.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 1,
@@ -120,6 +182,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/css/sass/_scaffold.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/css/sass/_tables.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/css/sass/_tables.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -238,6 +313,36 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/gallery.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/gallery.html",
+		"oF": 0
+		},
+	"/gallery.slim": {
+		"cB": 0,
+		"cmO": 0,
+		"ft": 1024,
+		"llg": 0,
+		"oA": 0,
+		"oAP": "/gallery.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 1,
+		"rAC": 0
+		},
+	"/images/home/sidegroup.png": {
+		"ft": 32768,
+		"iS": 614131,
+		"oA": 0,
+		"oAP": "/images/home/sidegroup.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -274,6 +379,25 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
+		},
+	"/services.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/services.html",
+		"oF": 0
+		},
+	"/services.slim": {
+		"cB": 0,
+		"cmO": 0,
+		"ft": 1024,
+		"llg": 0,
+		"oA": 0,
+		"oAP": "/services.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 1,
+		"rAC": 0
 		}
 	},
 "hooks": [
