@@ -28,6 +28,7 @@
 .hero-paragraph {
   margin-bottom: 40px;
   position: relative;
+  z-index: 2;
   &::after {
     content: "";
     position: absolute;

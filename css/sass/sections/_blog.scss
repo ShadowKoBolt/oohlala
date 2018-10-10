@@ -1,0 +1,121 @@
+//
+// Section - Blog
+// --------------------------------------------------
+
+.section__blog-posts {
+  margin-bottom: 150px;
+}
+.blog-post {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 600px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.10);
+}
+.blog-post__image {
+  height: 250px;
+  background-color: #FAEAEB;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.blog-post__content {
+  padding: 60px 30px 30px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  position: relative;
+}
+.blog-post__avatar {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  overflow: hidden;
+  transform: rotate(45deg);
+  top: -30px;
+  left: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.10);
+  img {
+    width: 100%;
+    transform: rotate(-45deg) scale(1.5);
+  }
+}
+.blog-post__tags, .blog-post__date {
+  font-size: 0.875rem;
+  color: #F3CACC;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.blog-post__tags {
+  margin-bottom: 10px;
+  &:before {
+    content: url("../images/global/tags.svg");
+    position: relative;
+    width: 20px;
+    height: 16px;
+    top: 3px;
+    margin-right: 5px;
+  }
+}
+.blog-post__date {
+  margin-top: auto;
+  color: #909090;
+}
+.blog-post__title {
+  font-family: $heading-font;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: $heading-colour;
+}
+.blog-post__arrow {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-color: red;
+  bottom: 0;
+  right: 0;
+  background-image: linear-gradient(-45deg, #FAEAEB 50%, #FFFFFF 50%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 20px;
+  &:after {
+    content: url("../images/global/arrow-right.svg");
+    width: 31px;
+    height: 23px;
+  }
+}
+.blog-post-content {
+  margin-bottom: 100px;
+  img {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+.blog-post-meta {
+  margin-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blog-post-meta__avatar {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  transform: rotate(45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.10);
+  margin-bottom: 40px;
+  img {
+    width: 100%;
+    transform: rotate(-45deg) scale(1.5);
+  }
+}

@@ -7,7 +7,7 @@
 		"uuidString": "B916965A-32C6-426C-B14A-CA52384B2849"
 		}
 	],
-"creatorBuild": "28901",
+"creatorBuild": "28905",
 "files": {
 	"/_brand.slim": {
 		"cB": 0,
@@ -238,6 +238,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/css/sass/sections/_blog.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/css/sass/sections/_blog.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/css/sass/sections/_cta.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -332,6 +345,69 @@
 		"oS": 1,
 		"rAC": 0
 		},
+	"/images/blog/blog-placeholder--large.jpg": {
+		"ft": 16384,
+		"iS": 265348,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/blog/blog-placeholder--large.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/blog/blog-placeholder.jpg": {
+		"ft": 16384,
+		"iS": 81816,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/blog/blog-placeholder.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/global/arrow-right.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/global/arrow-right.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/images/global/katie.jpg": {
+		"ft": 16384,
+		"iS": 22999,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/global/katie.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/global/tags.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/global/tags.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/images/global/title-heart.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/global/title-heart.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/images/home/sidegroup.png": {
 		"ft": 32768,
 		"iS": 614131,
@@ -357,6 +433,25 @@
 		"llg": 0,
 		"oA": 0,
 		"oAP": "/index.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 1,
+		"rAC": 0
+		},
+	"/post.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/post.html",
+		"oF": 0
+		},
+	"/post.slim": {
+		"cB": 0,
+		"cmO": 0,
+		"ft": 1024,
+		"llg": 0,
+		"oA": 0,
+		"oAP": "/post.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 1,

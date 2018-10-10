@@ -25,8 +25,35 @@ p {
 .text--s {
   font-size: 0.875rem;
 }
+.text--uppercase {
+  text-transform: uppercase;
+}
+.text--muted {
+  color: #909090;
+}
 .title--offset {
   position: relative;
   left: -30px;
+  margin-bottom: 20px;
+}
+.title--heart {
+  display: inline-block;
+  position: relative;
+  &::after {
+    content: url("../images/global/title-heart.svg");
+    width: 100px;
+    height: 82px;
+    position: absolute;
+    right: -50px;
+    top: -20px;
+    z-index: -1;
+  }
+}
+.sub-title {
+  @extend .text--muted;
+  @extend .text--uppercase;
+  @extend .text--s;
+  letter-spacing: 2px;
+  font-weight: 500;
   margin-bottom: 20px;
 }
