@@ -4,6 +4,13 @@
 
 .section__hero {
   margin: 100px 0;
+  position: relative;
+}
+.hero-image {
+  position: absolute;
+  width: 50%;
+  left: 0;
+
 }
 .title--square {
   position: relative;
@@ -23,7 +30,10 @@
   }
 }
 .hero-block {
-  margin: 100px 0;
+  margin: 50px 0;
+  @include media-query(sm) {
+    margin: 100px 0;
+  }
 }
 .hero-paragraph {
   margin-bottom: 40px;

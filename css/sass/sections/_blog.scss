@@ -3,15 +3,25 @@
 // --------------------------------------------------
 
 .section__blog-posts {
-  margin-bottom: 150px;
+  margin-bottom: 0px;
+  @include media-query(sm) {
+    margin-bottom: 50px;
+  }
+  @include media-query(lg) {
+    margin-bottom: 150px;
+  }
 }
 .blog-post {
   display: flex;
   flex-direction: column;
   position: relative;
-  min-height: 600px;
+  min-height: 0px;
   background-color: #FFFFFF;
   box-shadow: 0 0 20px 0 rgba(0,0,0,0.10);
+  margin-bottom: 30px;
+  @include media-query(md){
+    min-height: 600px;
+  }
 }
 .blog-post__image {
   height: 250px;
@@ -26,6 +36,7 @@
   flex: 1;
   flex-direction: column;
   position: relative;
+  z-index: 2;
 }
 .blog-post__avatar {
   width: 60px;
@@ -72,6 +83,10 @@
   font-size: 2rem;
   line-height: 2.5rem;
   color: $heading-colour;
+  margin-bottom: 20px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
 }
 .blog-post__arrow {
   position: absolute;
@@ -85,6 +100,7 @@
   align-items: flex-end;
   justify-content: flex-end;
   padding: 20px;
+  z-index: 1;
   &:after {
     content: url("../images/global/arrow-right.svg");
     width: 31px;

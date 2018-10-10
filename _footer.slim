@@ -1,12 +1,21 @@
 footer.section__footer
   .container
     .row.align-items-center.text--s
-      .col-4
+      .col-12.col-lg-4
         div Bespoke bridal and event hair in Ibiza, Spain
         div +34 622 69 91 17
-      .col-4
+      .col-12.col-lg-4
 
-      .col-4
+      .col-12.col-lg-4
         div.align__text--right
           | Created with 💛 by 
           a href="http://www.jrk-design.co.uk/" target="_blank" JRK Design
+
+script src="../scripts/masonry.js"
+javascript:
+  var elem = document.querySelector('.grid');
+  var msnry = new Masonry( elem, {
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    percentPosition: true
+  });
