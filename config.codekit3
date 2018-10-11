@@ -33,19 +33,6 @@
 		"oS": 1,
 		"rAC": 0
 		},
-	"/_grid.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/_grid.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"/_head.slim": {
 		"cB": 0,
 		"cmO": 0,
@@ -69,71 +56,6 @@
 		"oFM": 0,
 		"oS": 1,
 		"rAC": 0
-		},
-	"/_helpers.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/_helpers.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/_media-queries.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/_media-queries.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/_reset.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/_reset.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/_scaffold.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/_scaffold.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/_variables.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/_variables.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
 		},
 	"/blog.html": {
 		"cB": 0,

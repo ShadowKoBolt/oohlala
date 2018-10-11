@@ -1729,6 +1729,9 @@ html {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+  html.navActive {
+    overflow: hidden;
+    height: 100%; }
 
 *, *:before, *:after {
   box-sizing: inherit; }
@@ -1736,6 +1739,9 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
   color: #666666; }
+  .navActive body {
+    overflow: hidden;
+    height: 100%; }
 
 img, svg {
   width: 100%; }
@@ -1902,7 +1908,7 @@ p {
 .table--striped:last-of-type {
   margin-bottom: 0px; }
 
-.button {
+.button--primary {
   display: inline-block;
   font-weight: 500;
   text-align: center;
@@ -1925,7 +1931,8 @@ p {
 .button--primary {
   text-transform: uppercase;
   color: #222222;
-  border: 1px solid #222222; }
+  border: 1px solid #222222;
+  background-color: transparent; }
   .button--primary:hover, .button--primary:focus {
     text-decoration: none;
     color: #222222;
@@ -2009,17 +2016,101 @@ p {
 .section__nav {
   padding: 10px 0; }
 
+.header {
+  position: relative; }
+
 .nav__brand {
   display: inline-block;
-  width: 200px; }
-  .nav__brand svg {
-    width: 100%; }
+  width: 200px;
+  margin-bottom: 0; }
+  @media only screen and (min-width: 768px) {
+    .nav__brand {
+      margin-bottom: 30px; } }
+  @media only screen and (min-width: 992px) {
+    .nav__brand {
+      margin-bottom: 0; } }
+
+.nav__toggle {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  margin-top: -22px;
+  display: block;
+  z-index: 2000;
+  padding: 5px;
+  min-width: 0;
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+  border: 1px solid transparent; }
+  .nav__toggle:focus {
+    outline: none; }
+  @media only screen and (min-width: 768px) {
+    .nav__toggle {
+      display: none; } }
+  .nav__toggle div {
+    height: 2px;
+    background-color: #222222;
+    position: relative;
+    transition: all 0.3s ease-out; }
+    .navActive .nav__toggle div {
+      transform: rotate(-45deg); }
+    .nav__toggle div:before, .nav__toggle div:after {
+      content: "";
+      background: #222222;
+      height: 2px;
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      left: 0;
+      opacity: 1; }
+      .navActive .nav__toggle div:before, .navActive .nav__toggle div:after {
+        opacity: 0; }
+    .nav__toggle div:after {
+      top: 10px; }
+      .navActive .nav__toggle div:after {
+        transform: rotate(-90deg);
+        top: 0;
+        opacity: 1; }
+
+.nav__container {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: -10;
+  opacity: 0;
+  transition: all 0.5s ease; }
+  .nav__container.navActive {
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    z-index: 1000; }
+  @media only screen and (min-width: 768px) {
+    .nav__container {
+      position: static;
+      display: block !important;
+      background-color: inherit;
+      opacity: 1; } }
 
 .nav {
   list-style: none;
   display: flex;
-  justify-content: flex-end;
-  margin: 0; }
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  flex-direction: column; }
+  @media only screen and (min-width: 768px) {
+    .nav {
+      align-items: stretch;
+      flex-direction: row;
+      justify-content: space-between; } }
+  @media only screen and (min-width: 992px) {
+    .nav {
+      justify-content: flex-end; } }
 
 .nav__item {
   display: inline-block;
@@ -2027,8 +2118,15 @@ p {
   letter-spacing: 2px;
   font-size: 0.8rem;
   font-weight: 500;
-  margin-left: 50px;
-  position: relative; }
+  margin-left: 0;
+  position: relative;
+  margin: 30px; }
+  @media only screen and (min-width: 768px) {
+    .nav__item {
+      margin: 0; } }
+  @media only screen and (min-width: 992px) {
+    .nav__item {
+      margin-left: 50px; } }
   .nav__item.active a:after {
     opacity: 1; }
   .nav__item a {
@@ -2067,9 +2165,11 @@ p {
   @media only screen and (min-width: 576px) {
     .section__hero {
       margin: 50px 0 100px;
-      background-size: contain;
-      background-position: left center;
       min-height: 440px; } }
+  @media only screen and (min-width: 768px) {
+    .section__hero {
+      background-size: contain;
+      background-position: left center; } }
 
 .hero-image {
   position: absolute;

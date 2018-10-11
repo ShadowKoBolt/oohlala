@@ -6,6 +6,10 @@ html {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+  &.navActive {
+    overflow: hidden;
+    height: 100%;
+  }
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -13,6 +17,10 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
   color: $body-copy;
+  .navActive & {
+    overflow: hidden;
+    height: 100%;
+  }
 }
 img, svg {
   width: 100%;

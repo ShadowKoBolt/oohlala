@@ -18,7 +18,25 @@ footer.section__footer
 
 script src="../scripts/masonry.js"
 javascript:
+  var activeClass = 'navActive';
+  var menuToggle = document.getElementById('jsMenuToggle');
+  var fullscreenMenu = document.querySelector('.nav__container');
+  var bodyTag = document.querySelector('html');
+
   var elem = document.querySelector('.grid');
+
+  menuToggle.addEventListener('click', function () {
+    if (this.classList.contains(activeClass)) {
+      this.classList.remove(activeClass);
+      fullscreenMenu.classList.remove(activeClass);
+      bodyTag.classList.remove(activeClass);
+    } else {
+      this.classList.add(activeClass);
+      fullscreenMenu.classList.add(activeClass);
+      bodyTag.classList.add(activeClass);
+    }
+  });
+
   var msnry = new Masonry( elem, {
     itemSelector: '.grid-item',
     columnWidth: '.grid-sizer',
