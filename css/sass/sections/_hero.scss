@@ -27,19 +27,42 @@
 .title--square {
   position: relative;
   z-index: 100;
+  padding: 30px;
+  margin-bottom: 0;
+  display: inline-block;
+  left: 50px;
+  bottom: -50px;
+  background-image: linear-gradient(-135deg, rgba(250, 231, 232, 0.8) 0%, rgba(243, 202, 204, 0.8) 100%);
+  font-size: 2rem;
+  line-height: 2.5rem;
+  @include media-query(lg) {
+    bottom: 0;
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+  @include media-query(xl) {
+    background-image: none;
+  }
   &::before {
+    display: none;
     content: "";
-    display: block;
     position: absolute;
     width: 300px;
     height: 300px;
     top: 50%;
     margin-top: -150px;
-    left: -100px;
+    left: 0;
     z-index: -1;
     opacity: 0.8;
     background-image: linear-gradient(-135deg, #FAE7E8 0%, #F3CACC 100%);
+    @include media-query(xl) {
+      display: block;
+    }
   }
+}
+.homepage__title {
+  display: flex;
+  justify-content: flex-end;
 }
 .hero-block {
   margin: 50px 0;

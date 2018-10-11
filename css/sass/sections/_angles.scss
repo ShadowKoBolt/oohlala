@@ -20,11 +20,17 @@
 }
 .bg-angle__top-left {
   @extend %bg-angle;
-  width: 1440px;
-  height: 1440px;
-  top: -720px;
-  left: -720px;
+  width: 720px;
+  height: 720px;
+  top: -360px;
+  left: -360px;
   background-image: linear-gradient(-92deg, #FDF4F0 41%, #FBE5DD 100%);
+  @include media-query(sm) {
+    width: 1440px;
+    height: 1440px;
+    top: -720px;
+    left: -720px;
+  }
 }
 .bg-angle__bottom-right {
   @extend %bg-angle;
