@@ -14,13 +14,16 @@
 }
 .img-framer {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .img-frame__diamond--large {
   @extend %img-frame__diamond;
   @extend %img-frame--shadow;
   width: 240px;
   height: 240px;
-  @include media-query(md) {
+  @include media-query(sm) {
     width: 480px;
     height: 480px;
   }
@@ -31,16 +34,19 @@
   height: 120px;
   position: absolute;
   right: -55px;
-  @include media-query(md) {
+  @include media-query(sm) {
     width: 240px;
     height: 240px;
   }
 }
 .img-frame__overlay {
   position: absolute;
-  bottom: -50px;
-  right: 60px;
+  bottom: -30px;
+  left: 60%;
   @extend %img-frame--shadow;
+  @include media-query(sm) {
+    bottom: -50px;
+  }
 }
 .diamond--top {
   bottom: 100%;

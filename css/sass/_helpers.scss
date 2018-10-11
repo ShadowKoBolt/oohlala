@@ -60,5 +60,8 @@
 // Pad sections
 
 .section-margin {
-  margin-bottom: 400px;
+  margin-bottom: 150px;
+  @include media-query(md) {
+    margin-bottom: 400px;
+  }
 }

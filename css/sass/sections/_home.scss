@@ -1,0 +1,13 @@
+//
+// Section - Home
+// --------------------------------------------------
+
+.home-block {
+  margin-bottom: 80px;
+  @include media-query(sm) {
+    margin-bottom: 150px;
+  }
+  @include media-query(md) {
+    margin-bottom: 0;
+  }
+}
