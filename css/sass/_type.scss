@@ -15,10 +15,14 @@ p {
 }
 
 .title--xl {
-  font-size: 3.5rem;
-  line-height: 4rem;
-  margin-bottom: 2rem;
-  display: inline-block;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+  @include media-query(sm) {
+    font-size: 3.5rem;
+    line-height: 4rem;
+    margin-bottom: 2rem;
+  }
 }
 .title--l {
   font-size: 2rem;
@@ -34,20 +38,36 @@ p {
 }
 .title--offset {
   position: relative;
-  left: -30px;
+  left: 0;
   margin-bottom: 20px;
+  @include media-query(sm) {
+    left: -30px;
+  }
 }
 .title--heart {
   display: inline-block;
   position: relative;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  @include media-query(sm) {
+    overflow-wrap: normal;
+    word-wrap: normal;
+    hyphens: none;
+  }
   &::after {
     content: url("../images/global/title-heart.svg");
-    width: 100px;
-    height: 82px;
+    width: 60px;
+    height: 49px;
     position: absolute;
-    right: -50px;
+    right: 0;
     top: -20px;
     z-index: -1;
+    @include media-query(sm) {
+      right: -50px;
+      width: 100px;
+      height: 82px;
+    }
   }
 }
 .sub-title {

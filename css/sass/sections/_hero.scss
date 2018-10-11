@@ -3,8 +3,12 @@
 // --------------------------------------------------
 
 .section__hero {
-  margin: 100px 0;
+  margin: 50px 0 100px;
   position: relative;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  min-height: 440px;
 }
 .hero-image {
   position: absolute;
@@ -31,22 +35,28 @@
 }
 .hero-block {
   margin: 50px 0;
+  position: relative;
+  z-index: 2;
   @include media-query(sm) {
     margin: 100px 0;
   }
-}
-.hero-paragraph {
-  margin-bottom: 40px;
-  position: relative;
-  z-index: 2;
   &::after {
     content: "";
     position: absolute;
     top: 100%;
     left: 50%;
     background-color: #222;
+    opacity: 0.5;
     width: 1px;
-    height: 120px;
-    margin-top: 40px;
+    height: 100px;
+    margin-top: 0px;
+    @include media-query(sm) {
+      margin-top: 40px;
+      height: 120px;
+    }
+}
+.hero-paragraph {
+  padding-bottom: 1.5rem;
+  position: relative;
   }
 }

@@ -7,8 +7,26 @@
 .align__text--left {
   text-align: left;
 }
-.align__text--center {
+.text-center {
   text-align: center;
+}
+.text-left--lg {
+  text-align: inherit;
+  @include media-query(lg) {
+    text-align: left;
+  }
+}
+.text-center--lg {
+  text-align: left;
+  @include media-query(lg) {
+    text-align: center;
+  }
+}
+.text-right--lg {
+  text-align: inherit;
+  @include media-query(lg) {
+    text-align: right;
+  }
 }
 .align__text--right {
   text-align: right;

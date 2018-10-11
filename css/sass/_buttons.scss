@@ -32,3 +32,19 @@
     background-color: #FFFFFF;
   }
 }
+.button--line {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    background-color: #222;
+    opacity: 0.5;
+    width: 1px;
+    height: 100px;
+    margin-top: 0px;
+    @include media-query(sm) {
+      height: 120px;
+    }
+  }
+}
