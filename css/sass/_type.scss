@@ -4,18 +4,15 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
   color: $heading-colour;
 }
-
 %title-defaults {
   font-family: $heading-font;
   font-weight: normal;
   font-size: 1rem;
   color: $heading-colour;
 }
-
 strong, .strong {
   font-weight: 600;
 }
-
 p {
   font-size: 1rem;
   margin-bottom: 1.5rem;
@@ -24,7 +21,6 @@ p {
 a {
   color: $body-copy;
 }
-
 .title--xl {
   @extend %title-defaults;
   font-size: 2.5rem;

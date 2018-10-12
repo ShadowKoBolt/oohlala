@@ -68,6 +68,7 @@
   margin: 50px 0;
   position: relative;
   z-index: 2;
+  text-align: center;
   @include media-query(sm) {
     margin: 100px 0;
   }
@@ -85,9 +86,18 @@
       margin-top: 40px;
       height: 120px;
     }
+  }
+}
+.hero-block--right {
+  @include media-query(lg) {
+    text-align: left;
+    margin-bottom: 0px;
+    &:after {
+      opacity: 0;
+    }
+  }
 }
 .hero-paragraph {
   padding-bottom: 1.5rem;
   position: relative;
-  }
 }
