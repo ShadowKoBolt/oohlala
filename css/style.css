@@ -109,13 +109,11 @@ sup {
   top: -.5em; }
 
 a {
-  color: #007bff;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
 
 a:hover {
-  color: #0056b3;
   text-decoration: underline; }
 
 a:not([href]):not([tabindex]) {
@@ -1818,12 +1816,21 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
   color: #222222; }
 
+.title--xl, .title--l, .title--m {
+  font-family: "Libre Baskerville", serif;
+  font-weight: normal;
+  font-size: 1rem;
+  color: #222222; }
+
 strong, .strong {
   font-weight: 600; }
 
 p {
   font-size: 1rem;
   margin-bottom: 1.5rem; }
+
+a {
+  color: #666666; }
 
 .title--xl {
   font-size: 2.5rem;
@@ -1836,7 +1843,11 @@ p {
       margin-bottom: 2rem; } }
 
 .title--l {
-  font-size: 2rem; }
+  font-size: 2.2rem;
+  line-height: 2.8rem; }
+
+.title--m {
+  font-size: 1.2rem; }
 
 .text--s, .sub-title {
   font-size: 0.875rem; }
@@ -2320,6 +2331,51 @@ p {
   .hero-block .hero-paragraph {
     padding-bottom: 1.5rem;
     position: relative; }
+
+.grid__sizer,
+.grid__item {
+  width: 100%; }
+  @media only screen and (min-width: 768px) {
+    .grid__sizer,
+    .grid__item {
+      width: 50%; } }
+  @media only screen and (min-width: 992px) {
+    .grid__sizer,
+    .grid__item {
+      width: 33%; } }
+
+.grid__item {
+  float: left;
+  margin-bottom: 30px;
+  padding: 0 15px; }
+
+.grid__item--large {
+  width: 100%; }
+  @media only screen and (min-width: 768px) {
+    .grid__item--large {
+      width: 50%; } }
+  @media only screen and (min-width: 992px) {
+    .grid__item--large {
+      width: 66%; } }
+
+.grid__item--quote,
+.grid__item--quote-alt {
+  background-color: #FBE5DD;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  min-height: 350px; }
+  .grid__item--quote .title--l,
+  .grid__item--quote-alt .title--l {
+    margin-bottom: 40px; }
+
+.grid__item--quote-alt {
+  background-color: #FAEAEB; }
+
+.grid__item--author {
+  margin-top: auto;
+  align-self: flex-end; }
 
 .section__blog-posts {
   margin-bottom: 0px; }

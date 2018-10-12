@@ -16,15 +16,21 @@ footer.section__footer
         | Created with 💛 by
         a href="http://www.jrk-design.co.uk/" target="_blank" JRK Design
 
+script src="../scripts/imagesloaded.js"
 script src="../scripts/masonry.js"
+
 javascript:
+  // Menu vars
   var activeClass = 'navActive';
   var menuToggle = document.getElementById('jsMenuToggle');
   var fullscreenMenu = document.querySelector('.nav__container');
   var bodyTag = document.querySelector('html');
 
-  var elem = document.querySelector('.grid');
+  // Masonry vars
+  var masonryGrid = document.querySelector('.grid');
+  var msnry;
 
+  // Menu
   menuToggle.addEventListener('click', function () {
     if (this.classList.contains(activeClass)) {
       this.classList.remove(activeClass);
@@ -37,8 +43,12 @@ javascript:
     }
   });
 
-  var msnry = new Masonry( elem, {
-    itemSelector: '.grid-item',
-    columnWidth: '.grid-sizer',
-    percentPosition: true
+  // Masonry grid
+  imagesLoaded( masonryGrid, function() {
+    console.log("I happened");
+    msnry = new Masonry( masonryGrid, {
+      itemSelector: '.grid__item',
+      columnWidth: '.grid__sizer',
+      percentPosition: true
+    });
   });
