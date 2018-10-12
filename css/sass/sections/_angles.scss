@@ -7,6 +7,17 @@
   box-shadow: 0 0 20px 0 rgba(0,0,0,0.10);
   transform: rotate(45deg);
   z-index: -1;
+  overflow: hidden;
+  &:before {
+    content: "";
+    display: block;
+    width: 2000px;
+    height: 2000px;
+    background-image: url("../images/global/noise.png");
+    background-repeat: repeat;
+    z-index: 1000;
+    opacity: 0.8;
+  }
 }
 .bg-angle__center {
   @extend %bg-angle;

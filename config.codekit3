@@ -545,6 +545,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/images/global/double-heart.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/global/double-heart.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/images/global/icon-facebook.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -596,6 +606,37 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/images/global/logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/global/logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/images/global/noise.png": {
+		"ft": 32768,
+		"iS": 1107163,
+		"oA": 0,
+		"oAP": "/images/global/noise.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/images/global/pink-heart.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/global/pink-heart.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/images/global/tags.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -633,6 +674,39 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/images/home/home-image-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/home/home-image-3.jpg": {
+		"ft": 16384,
+		"iS": 40586,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/home/home-image-3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/home/home-image-4.jpg": {
+		"ft": 16384,
+		"iS": 44165,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/home/home-image-4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/home/home-image-5.jpg": {
+		"ft": 16384,
+		"iS": 38596,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/home/home-image-5.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

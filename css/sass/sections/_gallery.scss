@@ -1,3 +1,6 @@
+.grid {
+  position: relative;
+}
 .grid__sizer,
 .grid__item {
   width: 100%;
@@ -40,4 +43,22 @@
 .grid__item--author {
   margin-top: auto;
   align-self: flex-end;
+}
+.gallery-heart {
+  position: absolute;
+  width: 100px;
+  height: 82px;
+  right: -30px;
+  top: -40px;
+  z-index: 10;
+  display: none;
+  @include media-query(sm) {
+    display: block;
+  }
+  @include media-query(lg) {
+    width: 164px;
+    height: 134px;
+    right: -20px;
+    top: -60px;
+  }
 }

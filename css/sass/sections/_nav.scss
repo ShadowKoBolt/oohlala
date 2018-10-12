@@ -3,7 +3,10 @@
 // --------------------------------------------------
 
 .section__nav {
-  padding: 10px 0;
+  padding: 10px;
+  @include media-query(md) {
+    padding: 30px 0 10px;
+  }
 }
 .header {
   position: relative;

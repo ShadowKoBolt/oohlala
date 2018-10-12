@@ -41,9 +41,9 @@
   left: auto;
   right: 0;
   float: none;
-  margin: 150px 0 200px;
+  margin: 80px 0 100px;
   @include media-query(sm) {
-    margin: 350px 0 400px;
+    margin: 150px 0 200px;
   }
   @include media-query(lg) {
     float: right;
@@ -73,16 +73,20 @@
   position: absolute;
   left: 50%;
   margin-left: 40px;
+  display: none;
   @include media-query(sm) {
     width: 240px;
     height: 240px;
     margin-left: 70px;
   }
+  @include media-query(lg) {
+    display: block;
+  }
 }
 .img-frame__overlay {
   position: absolute;
   bottom: -30px;
-  left: 60%;
+  left: 50%;
   @extend %img-frame--shadow;
   @include media-query(sm) {
     bottom: -50px;
@@ -99,18 +103,21 @@
   z-index: 2;
 }
 .diamond-decoration-1 {
-  background-color: #FBE5DD;
-  top: 100%;
-  display: block;
+  background-color: $primary-color;
+  top: -430px;
+  margin-left: 260px;
 }
 .diamond-decoration-2 {
-  top: 100%;
+  background-color: $secondary-color;
+  top: -50px;
+  margin-left: 260px;
 }
 .diamond-decoration-3 {
-  top: 100%;
+  background-color: #F5D5D6;
+  top: auto;
+  bottom: -50px;
+  margin-left: 260px;
 }
-
-
 
 // Masonry
 

@@ -3,6 +3,7 @@
 // --------------------------------------------------
 
 .home-block {
+  position: relative;
   margin-bottom: 80px;
   @include media-query(sm) {
     margin-bottom: 150px;
@@ -22,7 +23,74 @@
 }
 .section__angles {
   margin-bottom: 0;
+  position: relative;
   @include media-query(lg) {
-    margin-bottom: 300px;
+    margin-bottom: 350px;
+  }
+}
+.home-hero-heart {
+  position: absolute;
+  width: 100px;
+  height: 82px;
+  right: 30px;
+  top: auto;
+  z-index: 100;
+  display: none;
+  @include media-query(md) {
+    display: block;
+    top: auto;
+    right: 30px;
+    bottom: -180px;
+  }
+  @include media-query(lg) {
+    right: 280px;
+    bottom: -160px;
+  }
+  @include media-query(xl) {
+    display: block;
+    top: -10px;
+    right: 0;
+  }
+}
+.home-paragraph1-heart {
+  position: absolute;
+  width: 100px;
+  height: 82px;
+  left: -20px;
+  top: -25px;
+  z-index: -1;
+  transform: rotate(-25deg);
+  @include media-query(md) {
+    top: -30px;
+  }
+  @include media-query(lg) {
+    top: -10px;
+  }
+  @include media-query(xl) {
+    top: 10px;
+  }
+}
+.home-paragraph2-heart {
+  position: absolute;
+  width: 164px;
+  height: 134px;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.home-grid-heart {
+  position: absolute;
+  width: 125px;
+  height: 92px;
+  left: auto;
+  right: 55%;
+  bottom: 0px;
+  z-index: 1;
+  @include media-query(sm) {
+    width: 250px;
+    height: 185px;
+    bottom: -80px;
+    left: 0;
+    right: auto;
   }
 }
