@@ -15,15 +15,12 @@
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
-  border: 0;
   padding: 0.75rem 1.5rem;
   font-size: 0.8rem;
   line-height: 1.5;
   min-width: 180px;
-  transition: all 0.7s ease;
-}
-.button--primary {
-  @extend %button;
+  transition: all 1.5s ease;
+  position: relative;
   text-transform: uppercase;
   color: #222222;
   border: 1px solid #222222;
@@ -31,22 +28,54 @@
   &:hover, &:focus {
     text-decoration: none;
     color: #222222;
-    background-color: #FFFFFF;
   }
 }
-.button--line {
+.line-button {
+  @extend %button;
   &::after {
     content: "";
     position: absolute;
     top: 100%;
     left: 50%;
     background-color: #222;
-    opacity: 0.5;
+    opacity: 0;
     width: 1px;
-    height: 100px;
     margin-top: 0px;
-    @include media-query(sm) {
-      height: 120px;
+    transition: all 1s ease;
+  }
+  &:hover {
+    &:after {
+      opacity: 1;
+    }
+  }
+}
+.line-button--bottom {
+  &::after {
+    top: 100%;
+    left: 50%;
+    width: 1px;
+    height: 1px;
+  }
+  &:hover {
+    transform: translateY(-20px);
+    &:after {
+      height: 100px;
+      top: 90%;
+    }
+  }
+}
+.line-button--right {
+  &::after {
+    top: 50%;
+    left: 100%;
+    width: 1px;
+    height: 1px;
+  }
+  &:hover {
+    transform: translateX(-20px);
+    &:after {
+      width: 100px;
+      left: 95%;
     }
   }
 }

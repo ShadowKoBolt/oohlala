@@ -7,7 +7,22 @@
   @include media-query(sm) {
     margin-bottom: 150px;
   }
-  @include media-query(md) {
+  @include media-query(lg) {
     margin-bottom: 0;
+  }
+}
+.section__findoutmore {
+  margin-bottom: 100px;
+  @include media-query(sm) {
+    margin-bottom: 200px;
+  }
+  @include media-query(lg) {
+    margin-bottom: 400px;
+  }
+}
+.section__angles {
+  margin-bottom: 0;
+  @include media-query(lg) {
+    margin-bottom: 300px;
   }
 }
