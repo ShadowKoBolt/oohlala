@@ -1878,7 +1878,7 @@ a {
       word-wrap: normal;
       hyphens: none; } }
   .title--heart::after {
-    content: url("../images/global/title-heart.svg");
+    content: url("http://jrkyte.github.io/oohlala/images/global/title-heart.svg");
     width: 60px;
     height: 49px;
     position: absolute;
@@ -2562,7 +2562,7 @@ a {
 .blog-post__tags {
   margin-bottom: 10px; }
   .blog-post__tags:before {
-    content: url("../images/global/tags.svg");
+    content: url("http://jrkyte.github.io/oohlala/images/global/tags.svg");
     position: relative;
     width: 20px;
     height: 16px;
@@ -2599,7 +2599,7 @@ a {
   overflow: hidden;
   transition: all 0.5s ease; }
   .blog-post__arrow:after {
-    content: url("../images/global/arrow-right.svg");
+    content: url("http://jrkyte.github.io/oohlala/images/global/arrow-right.svg");
     width: 31px;
     height: 23px; }
 
@@ -2714,19 +2714,19 @@ textarea {
     background-position: center; }
 
 .contact-list--facebook {
-  background-image: url("../images/global/icon-facebook.svg");
+  background-image: url("http://jrkyte.github.io/oohlala/images/global/icon-facebook.svg");
   background-size: 27px 30px; }
 
 .contact-list--instagram {
-  background-image: url("../images/global/icon-instagram.svg");
+  background-image: url("http://jrkyte.github.io/oohlala/images/global/icon-instagram.svg");
   background-size: 27px 30px; }
 
 .contact-list--mail {
-  background-image: url("../images/global/icon-mail.svg");
+  background-image: url("http://jrkyte.github.io/oohlala/images/global/icon-mail.svg");
   background-size: 28px 28px; }
 
 .contact-list--phone {
-  background-image: url("../images/global/icon-phone.svg");
+  background-image: url("http://jrkyte.github.io/oohlala/images/global/icon-phone.svg");
   background-size: 22px 30px; }
 
 .bg-angle__center, .bg-angle__top-left, .bg-angle__bottom-right, .bg-angle__bottom-left, .bg-angle__bottom-left--home {
@@ -2740,7 +2740,7 @@ textarea {
     display: block;
     width: 2000px;
     height: 2000px;
-    background-image: url("../images/global/noise.png");
+    background-image: url("http://jrkyte.github.io/oohlala/images/global/noise.png");
     background-repeat: repeat;
     z-index: 1000;
     opacity: 0.8; }

@@ -78,18 +78,18 @@ textarea {
   }
 }
 .contact-list--facebook {
-  background-image: url("../images/global/icon-facebook.svg");
+  background-image: url("#{$baseURL}/images/global/icon-facebook.svg");
   background-size: 27px 30px;
 }
 .contact-list--instagram {
-  background-image: url("../images/global/icon-instagram.svg");
+  background-image: url("#{$baseURL}/images/global/icon-instagram.svg");
   background-size: 27px 30px;
 }
 .contact-list--mail {
-  background-image: url("../images/global/icon-mail.svg");
+  background-image: url("#{$baseURL}/images/global/icon-mail.svg");
   background-size: 28px 28px;
 }
 .contact-list--phone {
-  background-image: url("../images/global/icon-phone.svg");
+  background-image: url("#{$baseURL}/images/global/icon-phone.svg");
   background-size: 22px 30px;
 }

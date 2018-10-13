@@ -81,7 +81,7 @@
 .blog-post__tags {
   margin-bottom: 10px;
   &:before {
-    content: url("../images/global/tags.svg");
+    content: url("#{$baseURL}/images/global/tags.svg");
     position: relative;
     width: 20px;
     height: 16px;
@@ -119,7 +119,7 @@
   overflow: hidden;
   transition: all 0.5s ease;
   &:after {
-    content: url("../images/global/arrow-right.svg");
+    content: url("#{$baseURL}/images/global/arrow-right.svg");
     width: 31px;
     height: 23px;
   }

@@ -13,7 +13,7 @@
     display: block;
     width: 2000px;
     height: 2000px;
-    background-image: url("../images/global/noise.png");
+    background-image: url("#{$baseURL}/images/global/noise.png");
     background-repeat: repeat;
     z-index: 1000;
     opacity: 0.8;
