@@ -57,6 +57,13 @@
 		"oS": 1,
 		"rAC": 0
 		},
+	"/blog-p2.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/blog-p2.html",
+		"oF": 0
+		},
 	"/blog-p2.slim": {
 		"cB": 0,
 		"cmO": 0,
@@ -1277,9 +1284,9 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/scripts/lazyload-min.js",
-		"oF": 1,
+		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
