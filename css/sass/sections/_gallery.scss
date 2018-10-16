@@ -1,6 +1,15 @@
 .grid {
   position: relative;
 }
+.grid.are-images-unloaded {
+  opacity: 0;
+}
+.page-load-status {
+  display: none;
+  padding-top: 20px;
+  text-align: center;
+  color: #777;
+}
 .grid__sizer,
 .grid__item {
   width: 100%;

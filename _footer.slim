@@ -18,6 +18,7 @@ footer.section__footer
 
 script src="#{baseURL}/scripts/imagesloaded.js"
 script src="#{baseURL}/scripts/masonry.js"
+script src="#{baseURL}/scripts/lazyload.js"
 
 javascript:
   // Menu vars
@@ -27,12 +28,8 @@ javascript:
   var bodyTag = document.querySelector('html');
 
   // Masonry vars
-  var masonryGrid = document.querySelector('.grid');
-  var msnry;
-
-  // Scrolling vars
-  var scrollTrigger = document.getElementById('scrollTrigger');
-  var scrollTo = document.getElementById('scrollTo');
+  var grid = document.querySelector('.grid');
+  var posts = document.querySelector('.section__blog-posts');
 
   // Menu
   menuToggle.addEventListener('click', function () {
@@ -47,17 +44,41 @@ javascript:
     }
   });
 
-  // Masonry grid
-  imagesLoaded( masonryGrid, function() {
-    console.log("I happened");
-    msnry = new Masonry( masonryGrid, {
-      itemSelector: '.grid__item',
-      columnWidth: '.grid__sizer',
-      percentPosition: true
-    });
+  // Gallery
+
+  var msnry = new Masonry( grid, {
+    itemSelector: 'none', // select none at first
+    columnWidth: '.grid__sizer',
+    percentPosition: true,
+    visibleStyle: { transform: 'translateY(0)', opacity: 1 },
+    hiddenStyle: { transform: 'translateY(100px)', opacity: 0 }
   });
 
-  // Scrolling on hompage
+  imagesLoaded( grid, function() {
+    grid.classList.remove('are-images-unloaded');
+    msnry.options.itemSelector = '.grid__item';
+    var items = grid.querySelectorAll('.grid__item');
+    msnry.appended( items );
+  });
+
+  var infScrollGallery = new InfiniteScroll( grid, {
+    path: '.pagination__next',
+    append: '.grid__item',
+    outlayer: msnry,
+    status: '.page-load-status',
+    hideNav: '.pagination',
+  });
+
+  // Blog
+
+  var infScrollPosts = new InfiniteScroll( posts, {
+    path: '.pagination__next',
+    append: '.post',
+    status: '.scroller-status',
+    hideNav: '.pagination',
+  });
+
+  //Scrolling on hompage
 
   function ScrollTo(name) {
     ScrollToResolver(document.getElementById(name));

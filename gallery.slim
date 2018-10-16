@@ -12,9 +12,8 @@ include _head
       .col-12.col-lg-8.offset-lg-2
         .hero-block
           h1.title--xl.title--heart Gallery
-
   .container
-    .grid
+    .grid.are-images-unloaded
       .gallery-heart
         img src="#{baseURL}/images/global/pink-heart.svg"
       .grid__sizer
@@ -44,6 +43,19 @@ include _head
         .grid__item--quote-alt
           .title--l “Katie was fantastic, a lovely person with a huge talent for wedding hair!”
           .grid__item--author.title--m - Lauren Howarth
+      .grid__item
+        img src="#{baseURL}/images/gallery/gallery-image10.jpg"
+    .row
+      .col-12
+        .page-load-status
+          p.infinite-scroll-request Loading more images...
+          p.infinite-scroll-last End of content
+          p.infinite-scroll-error No more images
+
+    .row
+      .col-12
+        p.pagination
+          a.pagination__next href="#{baseURL}/gallery-p2.html" Next page
 
     .row
       .col-12.col-lg-10.offset-lg-1.text-center

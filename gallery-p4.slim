@@ -1,0 +1,51 @@
+include _head
+.main
+  .bg-angle__center
+  .bg-angle__bottom-left
+  .bg-angle__bottom-right
+
+  include _header
+
+  .container
+    .row
+      .col-12.col-lg-8.offset-lg-2
+        .hero-block
+          h1.title--xl.title--heart Gallery
+          p.hero-paragraph Page 4
+
+  .container
+    .grid.are-images-unloaded
+      .grid__sizer
+      .grid__item
+        img src="#{baseURL}/images/gallery/gallery-image31.jpg"
+      .grid__item
+        img src="#{baseURL}/images/gallery/gallery-image32.jpg"
+      .grid__item
+        img src="#{baseURL}/images/gallery/gallery-image33.jpg"
+      .grid__item
+        img src="#{baseURL}/images/gallery/gallery-image34.jpg"
+      .grid__item
+        img src="#{baseURL}/images/gallery/gallery-image35.jpg"
+      .grid__item
+        img src="#{baseURL}/images/gallery/gallery-image36.jpg"
+      .grid__item.grid__item--large
+        img src="#{baseURL}/images/gallery/gallery-image37.jpg"
+      .grid__item
+        img src="#{baseURL}/images/gallery/gallery-image38.jpg"
+      .grid__item
+        img src="#{baseURL}/images/gallery/gallery-image39.jpg"
+      .grid__item
+        img src="#{baseURL}/images/gallery/gallery-image40.jpg"
+
+    .row
+      .col-12
+        p.pagination
+          a.pagination__next href="#{baseURL}/gallery-p5.html" Next page
+
+    .row
+      .col-12.col-lg-10.offset-lg-1.text-center
+        .section__cta
+          h3.title--xl I'd love to hear from you
+          a.line-button.line-button--right href="#{baseURL}/contact.html" Contact me
+
+  include _footer
