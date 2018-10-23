@@ -1,0 +1,52 @@
+.main
+  .bg-angle__center
+  .bg-angle__bottom-left
+  .bg-angle__bottom-right
+
+  = render "shared/header"
+
+  .container
+    .row
+      .col-12.col-lg-8.offset-lg-2
+        .hero-block
+          h1.title--xl.title--heart Gallery
+
+  .container
+    .grid
+      .gallery-heart
+        img src="../images/global/pink-heart.svg"
+      .grid__sizer
+      .grid__item
+        img src="../images/gallery/gallery-image1.jpg"
+      .grid__item.grid__item--large
+        img src="../images/gallery/gallery-image2.jpg"
+      .grid__item
+        img src="../images/gallery/gallery-image3.jpg"
+      .grid__item
+        .grid__item--quote
+          .title--l “Katie was absolutely brilliant from start to finish.”
+          .grid__item--author.title--m - Nicole Wardle
+      .grid__item
+        img src="../images/gallery/gallery-image4.jpg"
+      .grid__item
+        img src="../images/gallery/gallery-image5.jpg"
+      .grid__item
+        img src="../images/gallery/gallery-image6.jpg"
+      .grid__item
+        img src="../images/gallery/gallery-image7.jpg"
+      .grid__item
+        img src="../images/gallery/gallery-image8.jpg"
+      .grid__item
+        img src="../images/gallery/gallery-image9.jpg"
+      .grid__item
+        .grid__item--quote-alt
+          .title--l “Katie was fantastic, a lovely person with a huge talent for wedding hair!”
+          .grid__item--author.title--m - Lauren Howarth
+
+    .row
+      .col-12.col-lg-10.offset-lg-1.text-center
+        .section__cta
+          h3.title--xl I'd love to hear from you
+          a.line-button.line-button--right href=contact_path Contact me
+
+  = render "shared/footer"

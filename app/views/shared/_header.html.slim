@@ -1,0 +1,20 @@
+.section__nav
+  .container
+    .row.align-items-center.text-center
+      .col-12.col-lg-3.text-left--lg.header
+        button.button--nav.nav__toggle#jsMenuToggle
+          span.sr-only Menu
+          div
+        a.nav__brand href=root_path
+          img src="../images/global/logo.svg"
+      .col-12.col-lg-9
+        .nav__container
+          ul.nav
+            li class = nav_classes(action_name, "services")
+              a href=services_path Service & Pricelist
+            li class = nav_classes(action_name, "gallery")
+              a href=gallery_path Gallery
+            li class = nav_classes(action_name, "blog")
+              a href=blog_path Blog
+            li class = nav_classes(action_name, "contact")
+              a href=contact_path Contact

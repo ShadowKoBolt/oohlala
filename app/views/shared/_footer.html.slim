@@ -1,0 +1,79 @@
+footer.section__footer
+  .container
+    .row.align-items-center.text--s.text-center
+      .col-12.col-lg-5.text-center.text-left--lg
+        div Bespoke bridal and event hair in Ibiza, Spain
+        div +34 622 69 91 17
+      .col-12.col-lg-2
+        ul.footer-icons
+          li.footer-icons__item
+            a href="https://www.facebook.com/KatieBoltMobileHairstylistIbiza/" target="_blank"
+              img src="../images/global/icon-facebook.svg"
+          li.footer-icons__item
+            a href="https://www.instagram.com/katieboltibiza" target="_blank"
+              img src="../images/global/icon-instagram.svg"
+      .col-12.col-lg-5.text-right--lg
+        span> Created with 💛 by
+        a href="http://www.jrk-design.co.uk/" target="_blank" JRK Design
+
+script src="../scripts/imagesloaded.js"
+script src="../scripts/masonry.js"
+
+javascript:
+  // Menu vars
+  var activeClass = 'navActive';
+  var menuToggle = document.getElementById('jsMenuToggle');
+  var fullscreenMenu = document.querySelector('.nav__container');
+  var bodyTag = document.querySelector('html');
+
+  // Masonry vars
+  var masonryGrid = document.querySelector('.grid');
+  var msnry;
+
+  // Scrolling vars
+  var scrollTrigger = document.getElementById('scrollTrigger');
+  var scrollTo = document.getElementById('scrollTo');
+
+  // Menu
+  menuToggle.addEventListener('click', function () {
+    if (this.classList.contains(activeClass)) {
+      this.classList.remove(activeClass);
+      fullscreenMenu.classList.remove(activeClass);
+      bodyTag.classList.remove(activeClass);
+    } else {
+      this.classList.add(activeClass);
+      fullscreenMenu.classList.add(activeClass);
+      bodyTag.classList.add(activeClass);
+    }
+  });
+
+  // Masonry grid
+  imagesLoaded( masonryGrid, function() {
+    console.log("I happened");
+    msnry = new Masonry( masonryGrid, {
+      itemSelector: '.grid__item',
+      columnWidth: '.grid__sizer',
+      percentPosition: true
+    });
+  });
+
+  // Scrolling on hompage
+
+  function ScrollTo(name) {
+    ScrollToResolver(document.getElementById(name));
+  }
+
+  function ScrollToResolver(elem) {
+    var jump = parseInt(elem.getBoundingClientRect().top * .2);
+    document.body.scrollTop += jump;
+    document.documentElement.scrollTop += jump;
+    //lastjump detects anchor unreachable, also manual scrolling to cancel animation if scroll > jump
+    if (!elem.lastjump || elem.lastjump > Math.abs(jump)) {
+      elem.lastjump = Math.abs(jump);
+      setTimeout(function() {
+        ScrollToResolver(elem);
+      }, "100");
+    } else {
+      elem.lastjump = null;
+    }
+  }
