@@ -6,21 +6,28 @@
   .container
     .row.align-items-center.justify-content-center.section__contact
       .col-12.col-lg-6.order-2.order-lg-1
-        form.contact-form
+        = render "shared/flash"
+
+        - if @contact.errors.any?
+          .alert
+            ul
+              - @contact.errors.full_messages.each do |error|
+                li = error
+        = form_for @contact, class: "contact-form" do |f|
           label for="formName"
             span.required *
             | Your name
-          input id="formName" type="text"
+          = f.text_field :name
 
           label for="formEmail"
             span.required *
             | Your e-mail
-          input id="formEmail" type="text"
+          = f.email_field :email
 
           label for="formMessage"
             span.required *
             | Your message
-          textarea id="formMessage"
+          = f.text_area :message
 
           button.line-button.line-button--right type="submit" Send message
 

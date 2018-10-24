@@ -11,9 +11,20 @@
 
     .row.section__blog-posts
       .col-12.col-md-6.col-lg-4
-        a.blog-post href="../post.html"
+        a.blog-post href=blog_1_path
           .blog-post__image
-            .blog-post__image-bg style="background-image: url('../images/blog/blog-placeholder.jpg');"
+            .blog-post__image-bg style="background-image: url('../images/blog/blog-placeholder-1.jpg');"
+          .blog-post__content
+            .blog-post__avatar
+              img src="../images/global/katie.jpg"
+            .blog-post__tags Ibiza
+            .blog-post__title Easy summer beach hair tutorial
+            .blog-post__date April 21, 2016
+          .blog-post__arrow
+      .col-12.col-md-6.col-lg-4
+        a.blog-post href=blog_2_path
+          .blog-post__image
+            .blog-post__image-bg style="background-image: url('../images/blog/blog-placeholder-2.jpg');"
           .blog-post__content
             .blog-post__avatar
               img src="../images/global/katie.jpg"
@@ -22,26 +33,15 @@
             .blog-post__date March 31, 2016
           .blog-post__arrow
       .col-12.col-md-6.col-lg-4
-        a.blog-post href="../post.html"
+        a.blog-post href=blog_3_path
           .blog-post__image
-            .blog-post__image-bg style="background-image: url('../images/blog/blog-placeholder.jpg');"
+            .blog-post__image-bg style="background-image: url('../images/blog/blog-placeholder-3.jpg');"
           .blog-post__content
             .blog-post__avatar
               img src="../images/global/katie.jpg"
             .blog-post__tags Ibiza
-            .blog-post__title My recommendations for your Ibiza holiday
-            .blog-post__date March 31, 2016
-          .blog-post__arrow
-      .col-12.col-md-6.col-lg-4
-        a.blog-post href="../post.html"
-          .blog-post__image
-            .blog-post__image-bg style="background-image: url('../images/blog/blog-placeholder.jpg');"
-          .blog-post__content
-            .blog-post__avatar
-              img src="../images/global/katie.jpg"
-            .blog-post__tags Ibiza
-            .blog-post__title My recommendations for your Ibiza holiday
-            .blog-post__date March 31, 2016
+            .blog-post__title Choosing your perfect wedding hairstyle
+            .blog-post__date March 21, 2016
           .blog-post__arrow
 
   = render "shared/footer"

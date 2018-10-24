@@ -1,5 +1,9 @@
 # frozen_string_literal: true
 
+require 'contact'
+
 class ApplicationController < ActionController::Base
-  def index; end
+  def contact
+    @contact = Contact.new
+  end
 end

@@ -1,0 +1,43 @@
+.main
+  .bg-angle__center
+
+  = render "shared/header"
+
+  .container
+    .row
+      .col-12.col-lg-8.offset-lg-2
+        .hero-block
+          .sub-title April 21, 2016
+          h1.title--xl.title--heart Easy summer beach hair tutorial
+          .hero-paragraph
+
+    .row
+      .col-12.col-lg-8.offset-lg-2
+        .blog-post-content
+          img src="../images/blog/blog-placeholder-1--large.jpg"
+          p When I’m styling people’s hair we’ll often talk about the ‘beach’ hair look and how much we love the way our hair goes after a day on the beach so I thought I would post a really quick and easy hair tutorial which works really well with beach textured hair or hair that has been curled the day before and slept in.  You know when its a bit too rough to wear down but you don’t want to waste time washing it either.  Blow drying hair yourself and holidays are not a good mix and if you want something that will be quick and easy but still look good here’s one of my favourites….
+
+          p If you are starting with straight hair you can prep it with a heat protector and section into large vertical sections.  Working forwards use your straighteners to curl each section.  Alternatively, you might want to take smaller sections and use a wand or tongs.  I then break up the curl with a dry shampoo and/or texturizing spray.
+
+          p I leave a section at either side of the face, just behind the ear and gather the rest into a really loose pony tail, securing a bobble at the very bottom, as close to the ends as you can.
+
+          p Simply roll this section onto itself and continue to the nape of the neck, where you can secure with grips.
+
+          p I then loosely pin the side sections into the roll, twist look really effective.  I also like to leave some loose hair around the front to frame the face, but this is up to you.
+
+          p Finally I pull out any bits I want to loosen and mess up and sometimes re curl the front section.  Spray with hair spray and away you go!
+
+        .blog-post-meta.text-center
+          .blog-post-meta__avatar
+            img src="../images/global/katie.jpg"
+          .sub-title By Katie Bolt
+          ul.social-share
+            li.social-share__item
+              a href="https://www.facebook.com/sharer/sharer.php?u=#{request.original_url}" target="_blank"
+                img src="../images/blog/social-icon-facebook.svg"
+            li.social-share__item
+              a href="https://twitter.com/home?status=INSERT%20TITLE%20HERE%20http%3A//#{request.original_url}" target="_blank"
+                img src="../images/blog/social-icon-twitter.svg"
+          .sub-title Share
+
+  = render "shared/footer"
