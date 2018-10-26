@@ -7,6 +7,6 @@ class ContactMailer < ApplicationMailer
     @email = contact.email
     @message = contact.message
 
-    mail to: 'to@example.org', subject: 'Message received'
+    mail to: 'bolt.shadow@gmail.com', subject: 'Message received'
   end
 end
