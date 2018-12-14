@@ -1,0 +1,54 @@
+.main
+  .bg-angle__center
+
+  = render "shared/header"
+
+  .container
+    .row
+      .col-12.col-lg-8.offset-lg-2
+        .hero-block
+          .sub-title December 13, 2018
+          h1.title--xl.title--heart My FAQs
+          .hero-paragraph
+
+    .row
+      .col-12.col-lg-8.offset-lg-2
+        .blog-post-content
+          img src="../images/blog/blog-placeholder-5--large.jpg"
+          p Clients always laugh at me when we are chatting as they think I must get asked the same questions all the time. It’s true but if you have met me you will know I like to talk A LOT so I have no problem gassing away, here are the ones I most frequently get...
+
+          h3 Why did you come to Ibiza?
+          p I had no intention of moving here but the first time I visited the Island on holiday I met my partner Jason. He came out to Sydney, Australia, where I was based, that winter and convinced me (it didn’t take much!) to come back to Ibiza that summer. I loved it and never went back to oz.
+
+          h3 How long have you lived here?
+          p Ten years
+
+          h3 Where about on the Island do you live?
+          p I live on the west coast between Sant Antoni and Sant Josep. It can get a bad rep but I love san Antonio, the surrounding beaches are the best on the Island, the people are hardworking and down to earth and there’s a great community feel. Residents here joke that living in Ibiza is a bit like London (you are either north or south, here it’s east or west) and I am definitely a west coast girl.
+
+          h3 What is your favourite beach?
+          p It depends what I am after and what sort of mood you catch me in as this answer changes all the time. My local is Port des Torrent and for families you can’t go wrong with this quite little cove. I love cala d’hort for the dramatic backdrop of es vedra (and the best paella on the Island) and in the winter Cala Gracio is so peaceful and there are some great hikes that take you over Cala Salada.
+
+          h3 Do you go to the clubs much and which one is the best?
+          p Unfortunately not, I think my clubbing days are behind me! A four year old and heavy work schedule in the summer don’t make staying out until 4am possible so you are more likely to find me at a beach party or daytime event on the rare times I do make it out. And Space was by far the best club and nothing has come close for me since it closed.
+
+          h3 What good restaurants would you recommend?
+          p I am a creature of habit and we go to the same places all lot as they are just so good.  For Spanish food the Pyranees in cala de Bou is the one. Tapas it has to be Tapas Restaurant, the choice and quality is unreal, as are their cocktails. Sunset it is Mint on the sunset strip and for a treat we go Campujol near Port des Torrent. It is the best fish on the island, great relaxed atmosphere.
+
+          h3 So, are their all lot of weddings in Ibiza?
+          p Yes. I think destination weddings are just getting more and more popular and we have a thriving industry here. The choice of venues, proximity to the UK, weather and natural beauty of the Island make it the perfect place to get hitched. On average I have five weddings per week plus bridal trials to fit in so I am one busy lady but I can’t imagine doing anything else that I enjoy more. It really is a dream job.
+
+        .blog-post-meta.text-center
+          .blog-post-meta__avatar
+            img src="../images/global/katie.jpg"
+          .sub-title By Katie Bolt
+          /ul.social-share
+          /  li.social-share__item
+          /    a href="https://www.facebook.com/sharer/sharer.php?u=#{request.original_url}" target="_blank"
+          /      img src="../images/blog/social-icon-facebook.svg"
+          /  li.social-share__item
+          /    a href="https://twitter.com/home?status=INSERT%20TITLE%20HERE%20http%3A//#{request.original_url}" target="_blank"
+          /      img src="../images/blog/social-icon-twitter.svg"
+          /.sub-title Share
+
+  = render "shared/footer"

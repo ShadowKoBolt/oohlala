@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get 'blog/my-recommendations-for-your-ibiza-holiday' => 'application#blog_2', as: 'blog_2'
   get 'blog/choosing-your-perfect-wedding-hairstyle' => 'application#blog_3', as: 'blog_3'
   get 'blog/top-five-things-to-do-in-ibiza-out-of-season' => 'application#blog_4', as: 'blog_4'
+  get 'blog/my-faqs' => 'application#blog_5', as: 'blog_5'
 
   resource :contacts, only: [:create]
 end
